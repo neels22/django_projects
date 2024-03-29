@@ -10,11 +10,11 @@ def create_student(request):
             return redirect('display_student')
     else:
         form = StudentForm()
-    return render(request, 'create_student.html', {'form': form})
+    return render(request, 'add_stud.html', {'form': form})
 
 def display_student(request):
     students = Student.objects.all()
-    return render(request, 'display_student.html', {'students': students})
+    return render(request, 'display.html', {'students': students})
 
 def redirect_home(request):
     return redirect('https://www.google.com/')
