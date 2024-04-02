@@ -11,7 +11,7 @@ def main():
         user_choice = input("Enter your choice: ")
 
         if user_choice == '1':
-            designation = input("Enter designation: ")
+            designation = input("Enter role: ")
             name = input("Enter name: ")
             joining_date = input("Enter joining date(YYYY-MM-DD): ")
             empDAO.create_emp(designation,name, joining_date)
